@@ -23,9 +23,9 @@
         --white: #ffffff;
         --yellow: #ffc801;
         --bg: #1b2e35;
-        --font-berlin: 'Berlin Sans FB';
-        --font-montserrat: 'Montserrat';
-        --font-bebas: 'Bebas Neue';
+        --font-berlin: 'Berlin Sans FB', sans-serif;
+        --font-montserrat: 'Montserrat', sans-serif;
+        --font-bebas: 'Bebas Neue', sans-serif;
     }
 
     @media screen and (max-width: 1200px) {
