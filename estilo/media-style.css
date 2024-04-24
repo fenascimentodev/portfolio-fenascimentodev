@@ -4,26 +4,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-@font-face {
-    font-family: 'Berlin Sans FB';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Berlin Sans FB'), url('BRLNSR.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'Berlin Sans FB Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Berlin Sans FB Bold'), url('BRLNSB.woff') format('woff');
-    }
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
     :root {
         --white: #ffffff;
         --yellow: #ffc801;
         --bg: #1b2e35;
-        --font-berlin: 'Berlin Sans FB', sans-serif;
+        --font-krub: 'Krub', sans-serif;
         --font-montserrat: 'Montserrat', sans-serif;
         --font-bebas: 'Bebas Neue', sans-serif;
     }
@@ -31,12 +18,18 @@
     @media screen and (max-width: 1200px) {
 
         .header {
-            height: 8%;
+            height: 10%;
         }
 
-        .header .btn {
-            padding: 10px;
+        .header .logo {
+            font-size: 1.5rem;
         }
+
+        .header a {
+            font-size: 1rem;
+        }
+
+        
         .infos {
             width: 500px;
         }
@@ -66,6 +59,14 @@
 
     .header {
         height: 7%;
+    }
+
+    .header .logo {
+        font-size: 1.2rem;
+    }
+
+    .header a {
+        font-size: .8rem;
     }
 
     /* MAIN MOBILE*/
@@ -118,6 +119,22 @@
         transition: all 0.5s;
     }
 
+    /* FOOTER */
+
+    footer a {
+        font-size: .8rem;
+    }
+
+    footer .logo {
+        font-size: 1.2rem;
+    }
+
+    footer .redes-sociais {
+        display: flex;
+        gap: 10px;
+        margin-top: -15px;
+    }
+
     }
 
 @media screen and (max-width: 768px) {
@@ -130,8 +147,12 @@
         height: 6%;
     }
 
-    .header a {
+    .header .logo {
         font-size: 1rem;
+    }
+
+    .header a {
+        font-size: .6rem;
     }
 
     /* MAIN MOBILE*/
@@ -188,7 +209,7 @@
     /* FOOTER */
 
     footer a {
-        font-size: 1rem;
+        font-size: .6rem;
     }
 
     footer .logo {
@@ -197,6 +218,7 @@
 
     footer .redes-sociais {
         display: flex;
+        margin-top: -20px;
         gap: 10px;
     }
 }
