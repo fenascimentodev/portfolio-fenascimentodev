@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'Berlin Sans FB';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Berlin Sans FB'), url('BRLNSR.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Berlin Sans FB Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Berlin Sans FB Bold'), url('BRLNSB.woff') format('woff');
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+:root {
+    --white: #ffffff;
+    --yellow: #ffc801;
+    --bg: #1b2e35;
+    --font-berlin: 'Berlin Sans FB';
+    --font-montserrat: 'Montserrat';
+    --font-bebas: 'Bebas Neue';
+}
+
+body {
+    background-color: var(--bg);
+}
+
+/* HEADER */
+
+.header { /* CONTAINER HEADER */
+    width: 100%;
+    height: 13%;
+    top: 0;
+    background-color: var(--bg);
+    border-bottom: 1px solid #1d1c1c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+}
+
+header .logo { /* LOGO */
+    font-family: var(--font-berlin);
+    font-size: 1.5rem;
+}
+
+header #icon-logo { /* ICON LOGO */
+    color: var(--yellow);
+}
+
+.nav { /* MENU CENTRAL */
+    font-family: "Montserrat", sans-serif;
+}
+
+.nav .ul { /* LISTA MENU CENTRAL */
+    display: flex;
+    list-style: none;
+
+}
+
+.nav .ul li a:hover { /* HOVER LISTA */
+    color: var(--yellow);
+}
+
+.nav .ul li a:focus { /* FOCUS LISTA */
+    color: var(--yellow);
+}
+
+header .btn { /* BOTÃO */
+    font-family: "Montserrat", sans-serif;
+    border: 2px solid var(--yellow);
+    border-radius: 20px;
+}
+
+header .btn:hover { /* HOVER BOTÃO  */
+    background-color: var(--yellow);
+}
+
+header a { /* LINKS HEADER */
+    color: var(--white);
+    text-decoration: none;
+    padding: 20px;
+    transition: all 0.5s;
+}
+
+/* MAIN PAGE PORTFOLIO */
+
+.main {
+    background-color: purple;
+    margin-top: 5%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--bg);
+    width: 100%px;
+    height: 100vh;
+}
+
+.bloco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg);
+    width: 400px;
+    height: 400px;
+    border: 2px solid var(--yellow);
+    color: var(--white);
+    border-radius: 20px;
+}
+
+.bloco h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: var(--font-bebas);
+}
+
+img {
+    width: 280px;
+    
+}
+
+.img-languages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.languages {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    gap: 20px;
+}
+
+#icon-html {
+    color: orangered;
+}
+
+#icon-css {
+    color: #004AE1;
+}
+
+#icon-js {
+    color: var(--yellow);
+}
+
+p {
+    text-align: center;
+    font-family: var(--font-montserrat);
+    width: 300px;
+}
+
+/* RODAPÉ */
+
+footer { /* RODAPÉ CONTAINER */
+    background-color: var(--bg);
+    border-top: 1px solid #1d1c1c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+footer .logo { /* RODAPÉ LOGO */
+    font-family: var(--font-berlin);
+    font-size: 1.5rem;
+}
+
+footer #icon-logo { /* ICON LOGO */ 
+    color: var(--yellow);
+}
+
+
+footer a { /* LINKS FOOTER */
+    color: var(--white);
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+footer .redes-sociais a:hover { /* FOOTER HOVER */ 
+    color: var(--yellow);
+}
+
+footer .redes-sociais {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    gap: 20px;
+    font-size: 2rem;
+}

@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'Berlin Sans FB';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Berlin Sans FB'), url('BRLNSR.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Berlin Sans FB Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Berlin Sans FB Bold'), url('BRLNSB.woff') format('woff');
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+:root {
+    --white: #ffffff;
+    --yellow: #ffc801;
+    --bg: #1b2e35;
+    --font-berlin: 'Berlin Sans FB';
+    --font-montserrat: 'Montserrat';
+    --font-bebas: 'Bebas Neue';
+}
+
+body {
+    background-color: var(--bg);
+}
+
+/* HEADER */
+
+.header { /* CONTAINER HEADER */
+    width: 100%;
+    height: 13%;
+    top: 0;
+    background-color: var(--bg);
+    border-bottom: 1px solid #1d1c1c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+}
+
+header .logo { /* LOGO */
+    font-family: var(--font-berlin);
+    font-size: 1.5rem;
+}
+
+header #icon-logo { /* ICON LOGO */
+    color: var(--yellow);
+}
+
+.nav { /* MENU CENTRAL */
+    font-family: "Montserrat", sans-serif;
+}
+
+.nav .ul { /* LISTA MENU CENTRAL */
+    display: flex;
+    list-style: none;
+
+}
+
+.nav .ul li a:hover { /* HOVER LISTA */
+    color: var(--yellow);
+}
+
+.nav .ul li a:focus { /* FOCUS LISTA */
+    color: var(--yellow);
+}
+
+header .btn { /* BOTÃO */
+    font-family: "Montserrat", sans-serif;
+    border: 2px solid var(--yellow);
+    border-radius: 20px;
+}
+
+header .btn:hover { /* HOVER BOTÃO  */
+    background-color: var(--yellow);
+}
+
+header a { /* LINKS HEADER */
+    color: var(--white);
+    text-decoration: none;
+    padding: 20px;
+    transition: all 0.5s;
+}
+
+/* MAIN */
+
+.main .section-main { /* SECTION MAIN */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.illustration { /* ILUSTRAÇÃO AMARELA*/
+    width: 700px;
+}
+
+.infos { /* TEXTOS MAIN */
+    width: 600px;
+    color: var(--white);
+    font-family: var(--font-montserrat);
+}
+
+span {
+    color: var(--yellow);
+}
+
+.infos h1 { /* H1 MAIN */
+    font-family: var(--font-bebas);
+    letter-spacing: 4px;
+    font-size:4rem;
+    font-weight: bold;
+}
+
+.infos h2 { /* H2 MAIN */
+    font-family: var(--font-berlin);
+    font-size: 1.5rem;
+    margin-top: -20px;
+}
+
+.tracado {
+    width: 900px;
+    color: var(--yellow);
+    height: 5px;
+}
+
+.infos p { /* PARÁGRAFO MAIN */
+    font-size: 1rem;
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+#icon-html {
+    color: orangered;
+}
+
+#icon-css {
+    color: #004AE1;
+}
+
+#icon-js {
+    color: var(--yellow);
+}
+
+/* MAIN PAGE PORTFOLIO */
+
+.main-portfolio {
+    background-color: purple;
+}
+
+.container-portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: blue;
+    width: 100%px;
+    height: 100vh;
+}
+
+.bloco {
+    background-color: red;
+    width: 300px;
+    height: 400px;
+}
+/* FIM MAIN PAGE PORTFOLIO */
+
+/* RODAPÉ */
+
+.footer { /* RODAPÉ CONTAINER */
+    background-color: var(--bg);
+    border-top: 1px solid #1d1c1c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+footer .logo { /* RODAPÉ LOGO */
+    font-family: var(--font-berlin);
+    font-size: 1.5rem;
+}
+
+footer #icon-logo { /* ICON LOGO */ 
+    color: var(--yellow);
+}
+
+
+.footer a { /* LINKS FOOTER */
+    color: var(--white);
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.footer .redes-sociais a:hover { /* FOOTER HOVER */ 
+    color: var(--yellow);
+}
+
+.footer .redes-sociais {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    gap: 20px;
+    font-size: 2rem;
+}
+
+
