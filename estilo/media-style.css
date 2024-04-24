@@ -34,6 +34,10 @@
         display: none;
     }
 
+    .header a {
+        font-size: 1rem;
+    }
+
     /* MAIN MOBILE*/
 
     .main .section-main {
@@ -45,11 +49,24 @@
     .infos {
         margin-top: 10%;
         text-align: center;
-        width: 500px;
+        width: 400px;
+    }
+
+    .main .section-main .infos h1 {
+        font-size: 2rem;
+    }
+
+    .main .section-main .infos h2 {
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+
+    .main .section-main .infos p {
+        font-size: .8rem;
     }
 
     .illustration {
-        width: 500px;
+        width: 400px;
         margin-bottom: -30px;
     }
 
@@ -68,7 +85,22 @@
     main  a { /* LINKS */
         color: var(--white);
         text-decoration: none;
-        padding: 20px;
+        padding: 15px;
         transition: all 0.5s;
+    }
+
+    /* FOOTER */
+
+    footer a {
+        font-size: 1rem;
+    }
+
+    footer .logo {
+        font-size: 1rem;
+    }
+
+    footer .redes-sociais {
+        display: flex;
+        gap: 10px;
     }
 }

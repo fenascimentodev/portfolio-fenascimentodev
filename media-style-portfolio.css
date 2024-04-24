@@ -29,6 +29,10 @@
     }
 
 @media screen and (max-width: 1024px) {
+
+    /* HEADER */
+
+    
     .btn {
         display: none;
     }
@@ -57,8 +61,7 @@
         border: 2px solid var(--yellow);
         border-radius: 20px;
         margin-top: 15%;
-        margin-bottom: ;
-        margin-left: 240px;
+        margin-left: 180px;
         margin-right: 240px;
         color: var(--white);
         text-decoration: none;
@@ -77,9 +80,25 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .main .container .bloco {
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+    }
 
+    .bloco h1 {
+        text-align: center;
+        margin-top: 20px;
+        font-family: var(--font-bebas);
+    }
 
+    img {
+        width: 200px;
+        
+    }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-
+    .btn-none {
+        
+    }
 }
