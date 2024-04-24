@@ -33,12 +33,28 @@
         .header {
             height: 8%;
         }
+
+        .header .btn {
+            padding: 10px;
+        }
         .infos {
-            text-align: center;
             width: 500px;
         }
-    .illustration {
-            width: 400px;
+
+        .main h1 {
+            font-size: 3rem;
+        }
+
+        .main h2 {
+            font-size: 1.2rem;
+            padding: 5px 0;
+        }
+
+        .main p {
+            font-size: .8rem;
+        }
+        .illustration {
+            width: 600px;
         }
     }
 
@@ -49,7 +65,7 @@
     }
 
     .header {
-        height: 8%;
+        height: 7%;
     }
 
     /* MAIN MOBILE*/
@@ -72,7 +88,6 @@
 
     .main .section-main .infos h2 {
         font-size: 1rem;
-        margin-top: 5px;
     }
 
     .main .section-main .infos p {
@@ -112,7 +127,7 @@
     }
 
     .header {
-        height: 7%;
+        height: 6%;
     }
 
     .header a {
@@ -139,7 +154,7 @@
 
     .main .section-main .infos h2 {
         font-size: .8rem;
-        margin-top: 5px;
+        padding: 10px 0;
     }
 
     .main .section-main .infos p {

@@ -52,7 +52,7 @@ body, html {
 
 .header { /* CONTAINER HEADER */
     width: 100%;
-    height: 13%;
+    height: 10%;
     top: 0;
     background-color: var(--bg);
     border-bottom: 1px solid #1d1c1c;
@@ -103,7 +103,8 @@ header .btn:hover { /* HOVER BOTÃO  */
 header a { /* LINKS HEADER */
     color: var(--white);
     text-decoration: none;
-    padding: 20px;
+    padding: 15px;
+    font-size: .8rem;
     transition: all 0.5s;
 }
 

@@ -37,7 +37,7 @@
         display: none;
     }
 
-
+    /* MAIN PRINCIPAL */
     .main {
         display: flex;
         flex-direction: column;
