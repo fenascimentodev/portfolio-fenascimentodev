@@ -28,7 +28,12 @@
         --font-bebas: 'Bebas Neue';
     }
 
-@media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
+
+
+    }
+
+@media screen and (max-width: 678px) {
     /* HEADER MOBILE*/
     .header .btn {
         display: none;
@@ -49,11 +54,12 @@
     .infos {
         margin-top: 10%;
         text-align: center;
-        width: 400px;
+        width: 350px;
     }
 
     .main .section-main .infos h1 {
         font-size: 2rem;
+        margin-top: 100px;
     }
 
     .main .section-main .infos h2 {
