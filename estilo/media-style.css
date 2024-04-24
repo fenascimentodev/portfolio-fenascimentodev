@@ -28,15 +28,91 @@
         --font-bebas: 'Bebas Neue';
     }
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1200px) {
 
+        .header {
+            height: 8%;
+        }
+        .infos {
+            text-align: center;
+            width: 500px;
+        }
+    .illustration {
+            width: 400px;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        /* HEADER MOBILE*/
+    .header .btn {
+        display: none;
+    }
+
+    .header {
+        height: 8%;
+    }
+
+    /* MAIN MOBILE*/
+
+    .main .section-main {
+        display: flex;
+        flex-direction: column-reverse;
 
     }
 
-@media screen and (max-width: 678px) {
+    .infos {
+        text-align: center;
+        width: 500px;
+    }
+
+    .main .section-main .infos h1 {
+        font-size: 2.5rem;
+        margin-top: 100px;
+    }
+
+    .main .section-main .infos h2 {
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+
+    .main .section-main .infos p {
+        font-size: 1rem;
+    }
+
+    .illustration {
+        width: 500px;
+        margin-bottom: -30px;
+    }
+
+    .btn-none { /* BOTÃO RECEBER ATENDIMENTO */
+        display: block;
+        font-family: "Montserrat", sans-serif;
+        border: 2px solid var(--yellow);
+        border-radius: 20px;
+        margin-bottom: 5%;
+    }
+    
+    .btn-none:hover { /* HOVER BOTÃO  */
+        background-color: var(--yellow);
+    }
+    
+    main  a { /* LINKS */
+        color: var(--white);
+        text-decoration: none;
+        padding: 25px;
+        transition: all 0.5s;
+    }
+
+    }
+
+@media screen and (max-width: 768px) {
     /* HEADER MOBILE*/
     .header .btn {
         display: none;
+    }
+
+    .header {
+        height: 7%;
     }
 
     .header a {
@@ -52,7 +128,6 @@
     }
 
     .infos {
-        margin-top: 10%;
         text-align: center;
         width: 350px;
     }
@@ -63,7 +138,7 @@
     }
 
     .main .section-main .infos h2 {
-        font-size: 1rem;
+        font-size: .8rem;
         margin-top: 5px;
     }
 
