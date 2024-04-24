@@ -28,47 +28,58 @@
         --font-bebas: 'Bebas Neue';
     }
 
-@media screen and (max-width: 768px) {
-    /* HEADER MOBILE*/
-    .header .btn {
+@media screen and (max-width: 1024px) {
+    .btn {
         display: none;
     }
 
-    /* MAIN MOBILE*/
 
-    .main .section-main {
+    .main {
         display: flex;
-        flex-direction: column-reverse;
-
+        flex-direction: column;
+        margin-top: 100px;
+        margin-bottom: 300px;
     }
 
-    .infos {
-        margin-top: 10%;
-        text-align: center;
-        width: 500px;
-    }
-
-    .illustration {
-        width: 500px;
-        margin-bottom: -30px;
+    .main .container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        gap: 50px;
     }
 
     .btn-none { /* BOTÃO RECEBER ATENDIMENTO */
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-family: "Montserrat", sans-serif;
         border: 2px solid var(--yellow);
         border-radius: 20px;
-        margin-bottom: 5%;
-    }
-    
-    .btn-none:hover { /* HOVER BOTÃO  */
-        background-color: var(--yellow);
-    }
-    
-    main  a { /* LINKS */
+        margin-top: 15%;
+        margin-bottom: ;
+        margin-left: 240px;
+        margin-right: 240px;
         color: var(--white);
         text-decoration: none;
         padding: 20px;
         transition: all 0.5s;
     }
+    
+    .btn-none:hover { /* HOVER BOTÃO  */
+        background-color: var(--yellow);
+    }
+
+    /* FOOTER */
+
+    .footer {
+        margin-top: -230px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
 }
