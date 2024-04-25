@@ -77,7 +77,6 @@
     .main .section-main {
         display: flex;
         flex-direction: column-reverse;
-
     }
 
     .infos {
@@ -87,7 +86,6 @@
 
     .main .section-main .infos h1 {
         font-size: 2.5rem;
-        margin-top: 100px;
     }
 
     .main .section-main .infos h2 {
@@ -173,7 +171,7 @@
 
     .main .section-main .infos h1 {
         font-size: 2rem;
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
     .main .section-main .infos h2 {
