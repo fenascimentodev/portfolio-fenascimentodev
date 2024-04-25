@@ -26,12 +26,15 @@
         }
 
         .header a {
-            font-size: 1rem;
+            font-size: .8rem;
         }
 
+        .nav a {
+            font-size: 1rem;
+        }
         
         .infos {
-            width: 500px;
+            width: 450px;
         }
 
         .main h1 {
@@ -47,7 +50,7 @@
             font-size: .8rem;
         }
         .illustration {
-            width: 600px;
+            width: 500px;
         }
     }
 

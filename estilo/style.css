@@ -102,6 +102,9 @@ header a { /* LINKS HEADER */
 
 /* MAIN */
 
+.main {
+    height: 100%;
+}
 
 .main .section-main { /* SECTION MAIN */
     display: flex;
@@ -168,28 +171,6 @@ span { /* TEXTO AMARELO DESTACADO NO TITULO */
     color: var(--yellow);
 }
 
-/* MAIN PAGE PORTFOLIO */
-
-.main-portfolio {
-    background-color: purple;
-}
-
-.container-portfolio {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: blue;
-    width: 100%px;
-    height: 100vh;
-}
-
-.bloco {
-    background-color: red;
-    width: 300px;
-    height: 400px;
-}
-/* FIM MAIN PAGE PORTFOLIO */
-
 /* RODAPÉ */
 
 .footer { /* RODAPÉ CONTAINER */
@@ -200,6 +181,7 @@ span { /* TEXTO AMARELO DESTACADO NO TITULO */
     align-items: center;
     justify-content: center;
     padding: 20px 0;
+    height: 20%;
 }
 
 footer .logo { /* RODAPÉ LOGO */
