@@ -64,7 +64,7 @@ header #icon-logo { /* ICON LOGO */
     font-family: "Montserrat", sans-serif;
 }
 
-.nav .ul { /* LISTA MENU CENTRAL */
+.nav .nav-menu { /* LISTA MENU CENTRAL */
     display: flex;
     list-style: none;
 
@@ -74,12 +74,27 @@ header #icon-logo { /* ICON LOGO */
     font-size: 1rem;
 }
 
-.nav .ul li a:hover { /* HOVER LISTA */
+.nav .nav-menu li a:hover { /* HOVER LISTA */
     color: var(--yellow);
 }
 
-.nav .ul li a:focus { /* FOCUS LISTA */
+.nav .nav-menu li a:focus { /* FOCUS LISTA */
     color: var(--yellow);
+}
+
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: var(--white);
+    transition: all 0.3s ease-in-out;
 }
 
 header .btn { /* BOTÃO */
@@ -125,7 +140,7 @@ header a { /* LINKS HEADER */
 }
 
 .infos { /* TEXTOS MAIN */
-    width: 600px;
+    width: 500px;
     color: var(--white);
     font-family: var(--font-montserrat);
 }

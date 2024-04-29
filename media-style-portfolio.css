@@ -37,9 +37,19 @@
             width: 400px;
             height: 400px;
             overflow: hidden;
+            margin-top: 0;
+        }
+
+        .h1-principal { /* H1 PORTFOLIO */
+            font-family: var(--font-bebas);
+            letter-spacing: 4px;
+            font-size:3rem;
+            font-weight: bold;
+            color: var(--white);
+            margin-top: 20px;
         }
     
-        .main h1 {
+        .main .h1-projeto {
             font-size: 2rem;
         }
     
@@ -51,6 +61,7 @@
             font-size: 1rem;
         }
     }
+
     @media screen and (max-width: 1024px) {
             /* HEADER MOBILE*/
     .header .btn {
@@ -69,6 +80,52 @@
         font-size: .8rem;
     }
 
+    /* MENU HAMBURGUER */
+
+    .hamburguer {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburguer.active .bar:nth-child(2) {
+    opacity: 0;
+    }
+
+    .hamburguer.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    }
+
+.hamburguer.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    position: fixed;
+    left: -100%;
+    gap: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #1d2020;
+    border-radius: 0 0 30px 0;
+    background-color: var(--bg);      
+    width: 100%;
+    transition: 0.3s;
+    }
+
+    .nav a {
+    margin: 16px 0;
+    }
+
+    .nav-menu.active {
+    left: 0;
+    }
+
+/* FIM MENU HAMBURGUER */
+
     /* MAIN */
 
     .main .container .bloco {            
@@ -76,7 +133,16 @@
         height: 350px;
     }
 
-    .main h1 {
+    .h1-principal { /* H1 PORTFOLIO */
+        font-family: var(--font-bebas);
+        letter-spacing: 4px;
+        font-size:2.5rem;
+        font-weight: bold;
+        color: var(--white);
+        margin-top: 20px;
+    }
+
+    .main .h1-projeto {
         font-size: 1.5rem;
     }
 
@@ -129,11 +195,18 @@
         width: 300px;
         height: 300px;
         overflow: hidden;
-        margin-top: 50px;
-        margin-bottom: -50px;
     }
 
-    .main h1 {
+    .h1-principal { /* H1 PORTFOLIO */
+        font-family: var(--font-bebas);
+        letter-spacing: 4px;
+        font-size:2rem;
+        font-weight: bold;
+        color: var(--white);
+        margin-top: 20px;
+    }
+
+    .main .h1-projeto {
         font-size: 1rem;
     }
 
