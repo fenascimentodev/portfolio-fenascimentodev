@@ -92,16 +92,21 @@
     }
 
     .nav-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;  
         position: fixed;
         left: -100%;
-        gap: 0;
-        border-radius: 0 0 20px 20px;
-        background-color: var(--bg);
-        text-align: center;
-        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #1d2020;
+        border-radius: 0 0 30px 0;
+        background-color: var(--bg);      
         width: 100%;
         transition: 0.3s;
-    }
+        }
 
     .nav a {
         margin: 16px 0;
