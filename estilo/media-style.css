@@ -76,6 +76,7 @@
 
     .hamburguer {
         display: block;
+        cursor: pointer;
     }
 
     .hamburguer.active .bar:nth-child(2) {
